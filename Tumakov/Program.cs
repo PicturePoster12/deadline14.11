@@ -33,18 +33,18 @@ class Laba3
     }
     static void Main()
     {
-        Console.WriteLine("3.1");
+        Console.WriteLine("3.1 Создать перечисление видов банковского счёта");
         Type_schet bank_schet = Type_schet.Sber;
         Console.WriteLine(bank_schet);
 
-        Console.WriteLine("3.2");
+        Console.WriteLine("3.2 Создать структуру с инофрмацией о банковском счёте");
         Bank_Shcet person = new Bank_Shcet();
         person.number = "1234 5678 8765 4321";
         person.type = "Sber";
         person.balance = 1000000;
         person.Print();
 
-        Console.WriteLine("dz 3.1");
+        Console.WriteLine("dz 3.1 Сщздать перечисление Вузов и структуру работник");
         Jober jober = new Jober();
         jober.name = "Дмитрий";
         jober.ВУЗ = ВУЗ.КАИ;
