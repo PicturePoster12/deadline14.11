@@ -30,7 +30,7 @@ class Program
     }
     static void Main()
     {
-        /*Console.Write("1.");
+        Console.Write("1.");
         Console.WriteLine("Тип данных – максимальное значение – минимальное значение");
         Console.WriteLine($"byte – {byte.MaxValue} – {byte.MinValue}");
         Console.WriteLine($"sbyte – {sbyte.MaxValue} – {sbyte.MinValue}");
@@ -86,7 +86,7 @@ class Program
         Console.WriteLine("Введите подстроку");
         string podstroka = Console.ReadLine();
         int count = Regex.Matches(stroka, Regex.Escape(podstroka)).Count;
-        Console.WriteLine($"Подстрока {podstroka} входит в основную строку {count} раз");
+        Console.WriteLine($"Количество вхождений подстроки {podstroka} в основную строку: {count}");
 
         Console.WriteLine("5. Определить колияество бутылок");
         try
@@ -112,7 +112,7 @@ class Program
         catch (FormatException)
         {
             Console.WriteLine("Неверный ввод");
-        }*/
+        }
 
         Console.WriteLine("6. Посчитать объём выпитого, процент спирта");
         Student student1 = new Student()
@@ -176,7 +176,7 @@ class Program
         double vsegoVypito = student1.kolvoNapitka + student2.kolvoNapitka + student3.kolvoNapitka + student4.kolvoNapitka + student5.kolvoNapitka;
         double vsegoAlchogol = (student1.kolvoNapitka * beer.procent * 0.01 + student2.kolvoNapitka * juice.procent * 0.01 + student3.kolvoNapitka * vodka.procent * 0.01 + student4.kolvoNapitka * vodka.procent * 0.01 + student5.kolvoNapitka * beer.procent * 0.01);
         Console.WriteLine($"Общий объём выпитого = {vsegoVypito}");
-        Console.WriteLine($"Общий объём алкоголя = {vsegoAlchogol}");
+        Console.WriteLine($"Общий объём алкоголя = {Math.Round(vsegoAlchogol, 2)} %");
         Console.WriteLine($"{student1.name} выпил {Math.Round(student1.kolvoNapitka / vsegoVypito * 100, 1)} %");
         Console.WriteLine($"{student2.name} выпил {Math.Round(student2.kolvoNapitka / vsegoVypito * 100,1)} %");
         Console.WriteLine($"{student3.name} выпил {Math.Round(student3.kolvoNapitka / vsegoVypito * 100,1)} %");
