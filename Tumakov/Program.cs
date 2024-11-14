@@ -44,7 +44,7 @@ class Laba3
         person.balance = 1000000;
         person.Print();
 
-        Console.WriteLine("dz 3.1 Сщздать перечисление Вузов и структуру работник");
+        Console.WriteLine("dz 3.1 Создать перечисление Вузов и структуру работник");
         Jober jober = new Jober();
         jober.name = "Дмитрий";
         jober.ВУЗ = ВУЗ.КАИ;
